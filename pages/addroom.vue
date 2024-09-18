@@ -1,6 +1,6 @@
 <template>
   <div class="create-room">
-    <h1>🟪 방 개설하기</h1>
+    <h1>방 개설하기</h1>
 
     <!-- 출발지/도착지 선택 -->
     <div class="input-group">
@@ -64,7 +64,7 @@ export default {
       date: "",
       hour: 0,
       minute: 0,
-      passengers: 1,
+      passengers: 4,
       roomName: "",
     };
   },
@@ -96,61 +96,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-/* 스타일 정의 */
-.create-room {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 1rem;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-}
-
-.input-group {
-  margin-bottom: 1rem;
-}
-
-label {
-  font-weight: bold;
-}
-
-input,
-select {
-  width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.time-picker {
-  display: flex;
-  justify-content: space-between;
-}
-
-.passenger-count {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-button {
-  background-color: #7b4fff;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-}
-
-.create-room-btn {
-  display: block;
-  width: 100%;
-  background-color: #7b4fff;
-  color: white;
-  padding: 0.75rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-}
-</style>
