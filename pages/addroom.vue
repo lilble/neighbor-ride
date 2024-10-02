@@ -85,13 +85,13 @@ export default {
         roomName: this.roomName,
       };
 
-      try {
-        const response = await this.$axios.post("/api/rooms", roomData);
-        console.log("Room created:", response.data);
-        this.$router.push("/rooms");
-      } catch (error) {
-        console.error("Error creating room:", error);
-      }
+      //   try {
+      //     const response = await this.$axios.post("/api/rooms", roomData);
+      //     console.log("Room created:", response.data);
+      //     this.$router.push("/rooms");
+      //   } catch (error) {
+      //     console.error("Error creating room:", error);
+      //   }
     },
   },
 };
